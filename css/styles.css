@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  color: #ffffff;
+}
+
+span {
+  color: #707070;
+  font-size: 12px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  width: 100%;
+  padding: 30px;
+  
+}
+
+.site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.wrapper {
+  flex: 1;
+  margin: 30px auto 50px;
+}
+
+.users__list {
+  display: grid;
+  grid-gap: 20px;
+  list-style: none;
+}
+
+.user__container__card {
+  width: 300px;
+  border: 1px solid rgba(95, 99, 104, 0.3);
+  border-radius: 3px;
+  box-shadow: 3px 3px 5px rgb(211, 211, 211);
+  cursor: pointer;
+  height: 100%;
+}
+
+.background__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("./../images/fondo.png");width: 100%;
+  height: 128px;
+}
+
+.opacity {
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:rgb(255, 255, 255, 0.9);
+  width: 100%;
+  height: 100%;
+}
+
+.user__container__data {
+  padding: 5px 0  15px;
+}
+
+.user__container__name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.small__img {
+  border-radius: 50%;
+}
+
+.user__container__phone {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-bottom: 15px;
+  font-size: 14px;
+}
+
+.user__container__email {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 14px;
+}
+
+.hidden {
+  display: none;
+}
+
+.flaticon-receptor-de-telfono, 
+.flaticon-sobre {
+  margin-right: 30px;
+}
+
+@media (min-width: 650px) {
+  .users__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+  }
+  
+}
+
+@media (min-width: 980px) {
+  .users__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+  }
+}
+
+@media (min-width: 1300px) {
+  .users__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }    
+}
