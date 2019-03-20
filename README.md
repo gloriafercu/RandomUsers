@@ -1,0 +1,1 @@
+Vanilla JavaScript Application using Random Users API.
