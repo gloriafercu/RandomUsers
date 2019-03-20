@@ -20,18 +20,14 @@ const fetchUsers = async () => {
   
   createUserCard();
 
-  const nodeList = document.querySelectorAll(".user__container__card");
+  const listUsers = document.querySelectorAll(".user__container__card");
 
+  function displayDataUsers() {
+    this.childNodes[5].classList.toggle('hidden');
+    this.childNodes[3].childNodes[5].classList.toggle('open');
+  }
+  listUsers.forEach(click => click.addEventListener('click', displayDataUsers));
 
-
- /*  nodeList.addEventListener('click', (e) => {
-      if (e.target !== this) {
-         console.log('aqui', e.target);
-         const d = document.querySelector('.user__container__data');
-         console.log(d);
-         d.classList.toggle('hidden');
-      }
-  });  */
 }
 
 fetchUsers();

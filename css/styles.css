@@ -80,6 +80,16 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 15px;
+  transition: 0.5s all;
+}
+
+.user__container__name i  {
+  transition: 0.5s all;
+}
+
+.user__container__name i.open {
+  transform: rotateX(180deg);
+  position: relative;
 }
 
 .small__img {
