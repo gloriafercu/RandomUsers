@@ -26,8 +26,8 @@ const fetchUsers = async () => {
     this.childNodes[5].classList.toggle('hidden');
     this.childNodes[3].childNodes[5].classList.toggle('open');
   }
-  listUsers.forEach(click => click.addEventListener('click', displayDataUsers));
 
+  listUsers.forEach(click => click.addEventListener('click', displayDataUsers));
 }
 
 fetchUsers();

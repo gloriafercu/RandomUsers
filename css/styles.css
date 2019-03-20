@@ -123,9 +123,8 @@ header {
 @media (min-width: 650px) {
   .users__list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-  }
-  
+    grid-template-columns: repeat(2, 1fr);
+  }  
 }
 
 @media (min-width: 980px) {
